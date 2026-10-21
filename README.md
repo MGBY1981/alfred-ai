@@ -2,7 +2,7 @@
 
 # Alfred
 
-**A personal assistant that remembers you — and lets you manage it's memories
+**A personal assistant that remembers you — and lets you manage its memories.**
 
 Runs on your machine, stores everything locally, and takes about five
 minutes to set up.
