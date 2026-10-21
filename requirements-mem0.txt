@@ -1,0 +1,13 @@
+# Optional extra, on top of requirements.txt.
+#
+#     pip install -r requirements.txt -r requirements-mem0.txt
+#
+# Needed only for alfred_ollama.py, memory_import.py and db_cleanup.py -
+# see the comment at the end of requirements.txt. mem0 pulls in a fair
+# number of further packages, which is why it is not in the main file.
+#
+# alfred_ollama.py additionally needs a running Ollama:
+#
+#     ollama pull nomic-embed-text
+
+mem0ai>=0.1

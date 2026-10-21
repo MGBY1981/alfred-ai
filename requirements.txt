@@ -1,0 +1,26 @@
+# Alfred 2.0 - dependencies
+#
+#     pip install -r requirements.txt
+#
+# These three are all the chat (alfred.py) and all the tools around it
+# need. No local AI installation, no GPU - everything that needs a model
+# goes to OpenRouter over HTTPS.
+
+streamlit>=1.40
+chromadb>=1.0
+requests>=2.31
+
+# --------------------------------------------------------
+# Optional: mem0
+# --------------------------------------------------------
+# Only three files use mem0, and you only need it if you want one of
+# them:
+#
+#     alfred_ollama.py    the chat variant that writes through mem0
+#                         (additionally needs a running Ollama with
+#                         `ollama pull nomic-embed-text`)
+#     memory_import.py    reads an export back in and computes real
+#                         embedding vectors while doing so
+#     db_cleanup.py       deletes through mem0's own API
+#
+# Install with:  pip install -r requirements-mem0.txt

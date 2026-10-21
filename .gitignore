@@ -1,0 +1,54 @@
+# --------------------------------------------------------
+# Credentials - the important part first
+# --------------------------------------------------------
+# config.py is created from config.example.py and holds your
+# OpenRouter key. It never belongs in a repository.
+config.py
+
+.env
+*.key
+secrets.*
+
+# --------------------------------------------------------
+# Personal data
+# --------------------------------------------------------
+# The memory and everything derived from it. These files contain
+# facts about you and the people around you - they stay local.
+chroma_db/
+exports/
+dialogs/
+sleep_plans/
+sleep_backups/
+memory_export.json
+*_memory.json
+alfred_memory*.json
+chroma_export_*.json
+alfredlite.log
+*.log
+
+# --------------------------------------------------------
+# Runtime and tooling
+# --------------------------------------------------------
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+.streamlit/secrets.toml
+
+# --------------------------------------------------------
+# Backups
+# --------------------------------------------------------
+*.zip
+captures/
+reference.jpg
+
+# --------------------------------------------------------
+# Editor and operating system
+# --------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
